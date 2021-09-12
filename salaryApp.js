@@ -84,11 +84,12 @@ function addRecordHandler() {
   const salary = document.getElementById("salary").value;
 
   if (!name || !salary) {
-    showDataError(name, salary);
+    // showDataError(name, salary);
+    alert('tui ki pagol?')
     return;
   }
 
-  addRecord(name, !salary);
+  addRecord(name, salary);
 }
 
 function addRecord(name, salary) {
